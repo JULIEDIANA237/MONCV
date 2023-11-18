@@ -9,61 +9,112 @@
 </head>
 <body>
     <div class="container">
-        <div class="title">
-            <p class="name">JULIE FONTSA DIANA <br><p class="nam"> WEB DESIGNER</p> </p><br>
-            
-            <div class="link">
-                <a href="" class="lien1">LINKEDIN</a>
-                <a href="" class="lien2">facebook</a>
+        <header>
+            <h1>JULIE FONTSA DIANA</h1>
+            <p>WEB DESIGNER</p>
+            <div class="lien">
+                <a class="lien1" href="http://">lien1</a>
+                <a href="http://">lien2</a>
             </div>
-        </div>
+        </header>
 
-        <div class="contain">
+
+          <div class="section">
+
             <div class="image">
-                <img src="profile.jpeg" alt="" class="img">
+              <img src="profile.jpeg" alt="">
             </div>
-
-            <div class="contact">
-                <h5>CONTACT</h5>
-            </div>
-            <p class="cont">TEL: 693-32-63-99 <br> QUARTIER: Yaoundé, Nkolbisson <br> E-MAIL: jj0938108@gmail.com</p>
-
-            <div class="competence">
-                <h5>COMPETENCE</h5>
-            </div>
-
-            <div class="grid-container">
-                <div class="skill">
-                  <h3>HTML</h3>
-                  <div class="progress-bar">
-                    <div class="progress" style="width: 1%;"></div>
-                  </div>
-                </div>
-                
-                <div class="skill">
-                  <h3>CSS</h3>
-                  <div class="progress-bar">
-                    <div class="progress" style="width: 60%;"></div>
-                  </div>
-                </div>
-
-                <div class="skill">
-                    <h3>JAVASCRIPT</h3>
-                    <div class="progress-bar">
-                      <div class="progress" style="width: 60%;"></div>
-                    </div>
-                </div>
-
-                
               
-                <!-- Ajoutez plus de compétences ici -->
-            </div>
+  
+              <h5>CONTACT</h5>
+              <p class="text">Tel: 693-32-63-99 <br> Adresse: Nkolbisson <br>E-mail: jj0938108@gmail.com</p>
+  
+              <h5>COMPETENCE</h5>
+              <div class="skills">
+                  <div class="skill">
+                    <!-- <h4>Compétence 1</h4> -->
+                    <span class="competence">Maîtrise des langages de programmation tels que HTML, CSS et JavaScript.</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <!-- <h4>Compétence 2</h4> -->
+                    <span class="competence">Connaissance des principes de conception et de l'expérience utilisateur.</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 60%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <!-- <h4>Compétence 3</h4> -->
+                    <span class="competence">Capacité à créer des interfaces utilisateur attrayantes et fonctionnelles.</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <!-- <h4>Compétence 3</h4> -->
+                    <span class="competence">Compréhension des concepts de responsive design et d'accessibilité web.</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                  </div>
+              </div>
+              <button id="ajouter">Ajouter une compétence</button>
+              
+              <h5>FORMATIONS</h5>
+              <div class="diplome">
+                  <h6>Licence 1</h6>
+                  <em>Université de Yaoundé 1/Septembre 2021- Juin 2022</em>
 
-            <div class="grid-container" id="skills-container"></div>
-            <button onclick="addSkill()">Ajouter une compétence</button>
+                  <div class="liste">
+                      <ul>
+                        <li>algèbre</li>
+                        <li>algorithmique</li>
+                        <li>Programmation Orientée Objet</li>
+                        <li>Programmation web</li>
+                        <li>Bases de Données</li>
+                        <li>Réseaux</li>
+                      </ul>
+                  </div>
+  
+                  <h6>Licence 2</h6>
+                  <em>Université de Yaoundé 1/Septembre 2022- Juin 2023</em>
+                  <div class="liste">
+                    <ul>
+                      <li>algèbre</li>
+                      <li>algorithmique</li>
+                      <li>Programmation Orientée Objet</li>
+                      <li>Programmation web</li>
+                      <li>Bases de Données</li>
+                      <li>Réseaux</li>
+                    </ul>
+                </div>
+              </div>
+              <button id="ajout">Ajouter une formation</button>
+          </div>
+  
+            <div class="profil">
+              <h4>PROFIL</h4>
+              <p class="parag">
+                Étudiante en génie logiciel passionnée par le web design, je suis à la recherche d'opportunités pour développer mes compétences dans ce domaine. <br> Mon parcours académique en génie logiciel m'a permis d'acquérir une solide base en programmation et en développement de logiciels. <br> Cependant, ma passion pour le design et l'esthétique m'a conduit à explorer le monde du web design.
+              </p>
 
-            
-        </div>
+              <h4>EXPERIENCES</h4>
+              <div class="experience">
+                <h6>Projets scolaires en web design(2022)</h6>
+                <ul class="liste">
+                  <li>Conception et développement d'un site web interactif pour un projet de cours, en utilisant HTML, CSS et JavaScript</li>
+                  <li>Collaboration avec une équipe de camarades de classe pour définir les objectifs du projet et répartir les tâches</li>
+                  <li>Mise en œuvre d'un design moderne et esthétiquement plaisant, en utilisant des principes de design tels que la typographie, la couleur et la mise en page</li>
+                  <li>Défis rencontrés : adaptation du site aux différentes résolutions d'écran pour assurer une expérience utilisateur cohérente sur les appareils mobiles et de bureau. J'ai utilisé des techniques de responsive design pour relever ce défi.</li>
+                  <li>Résultat : un site web fonctionnel et attrayant, mettant en valeur les compétences techniques acquises et démontrant ma capacité à travailler en équipe pour atteindre les objectifs fixés.</li>
+                </ul>
+                
+              </div>
+              <button id="add">Ajouter une expérience</button>
+
+            </div>        
     </div>
     <script src="index.js"></script>
 </body>

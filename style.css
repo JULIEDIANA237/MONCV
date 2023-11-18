@@ -5,129 +5,755 @@ body {
 
   .container {
       border: 2px solid #333;
-      padding: 20px;
-      margin: 20px;
-      max-width: 900px;
       height: 200vh;
-      margin: 0 auto;
-      font-family: Arial, sans-serif;
       position: relative;
   }
 
-.title{
-    border: 2px solid #333;
-    background-color: #e4e414;
-    padding: 30px;
-    margin: 30px;
-    margin-left: -20px;
-    margin-right: -20px;
-}
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    margin-top: 50px;
+  }
 
-.name{
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: right;
-    font-size: 1.5rem;
-}
-.nam{
-    color: white;
-    margin-right: 65px;
-    text-align: right;
-    font-size: 0.9rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.link{
-    display: flex;
-    justify-content: right;
-}
-.link, a{
-    align-content: space-between;
-    font-size: 0.9rem;
-    color: aliceblue;
+  h1{
+    font-size: 0.7rem;
+    
+  }
+  p{
+    font-size: 0.5rem;
     margin-right: 30px;
-}
-.lien1{
-    margin-right: 120px;
+    color: gray;
+  }
+  .lien{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  
+  a{
+    margin-left: auto;
     text-decoration: none;
-}
-.lien2{
-    margin-right: -30px;
-    text-decoration: none;
-}
-.contain{
+    color: gray;
+    font-size: 0.7rem;
+  }
+  a:hover{
+    color: violet;
+    transition: 0.5s;
+  }
+  .lien1{
+    margin-right: -100px;
+  }
+
+  .section {
     position: absolute;
-  top: 0;
-  left: 50px;
-  height: 500vh;
-  width: 500px;
-  background-color: hsl(249, 100%, 50%);
-}
-
-.img{
-    margin-bottom: -10px;
-    /* border-radius: 500px; */
-    width: 150px;
-    height: 300px;
-}
-img{
-     margin-top: -10%;
-    clip-path:ellipse(50% 25%);
-    margin-left: 150px;
-}
-
-.contact{
-    border: solid black;
-    background-color: black;
-    margin-top: -50px;
+    top: 0;
+    right: 10px; /* Ajustez la valeur selon votre besoin */
+    bottom: 0;
+    margin-left: -10px;
+    width: 45%;
+    left: 20px;/* Ajustez la valeur selon votre besoin */
+    background-color: violet;
+    z-index: 1;
+  }
+  .image {
+    border: 1px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto; 
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+  
+  .image img {
+    /* display: block; */
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .image:hover{
+    -webkit-transform: scale(1.3);
+	  transform: scale(1.3);
+  }
+  h5{
+    text-align: center;
+    border: 1px solid #333;
+    color: white;
+    background-color: #333;
+    font-size: 0.65rem;
     margin-left: 10px;
     margin-right: 10px;
-}
-h5{
-    color: aliceblue;
+  }
+  h5:hover{
+    background-color: #4caf50;
+    transition: 0.5s;
+  }
+  .text{
     text-align: center;
-}
-.cont{
+    font-size: 0.6rem;
+    font-weight: bold;
+    margin: auto;
+  }
+
+  span{
+    font-size: 0.7rem;
     text-align: center;
-    color: aliceblue;
-    font-size: 0.9rem;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-top: -20px;
+  }
+  
+  .skill {
+    margin-bottom: 5px;
+  }
+  
+  .progress {
+    height: 10px;
+    background-color: #f0f0f0;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+  }
+  button{
+    border-radius: 10px;
+    height: 30px;
+    font-size: 0.6rem;
+    margin: 10px 10px;
+    margin-top: -100px;
+  }
+  button:hover{
+    background-color: #4caf50;
+    transition: 0.5s;
+  }
+
+  .formations {
+    margin: 10px;
+  }
+  
+  .diplome {
+    margin-bottom: 10px;
+  }
+  
+  .diplome h6 {
+    margin: 0;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+  .diplome em {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .diplome ul {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 0.8rem;
+  }
+  
+
+  .profil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  h4{
+    text-align: center;
+    border: 1px solid #333;
+    color: white;
+    background-color: #333;
+    font-size: 0.65rem;
+    width: 40%;
+    margin-left: 120px;
+  }
+  h4:hover{
+    background-color: #4caf50;
+    transition: 0.5s;
+  }
+  .parag{
+    text-align: justify;
+    font-size: 0.65rem;
+    width: 40%;
+    margin-left: 160px;
+  }
+
+  .experience h6{
+    margin-left: 150px;
+  }
+  .experience .liste{
+    text-align: justify;
+    font-size: 0.65rem;
+    width: 40%;
+    color: #615e5e;
+    margin-left: 125px;
+  }
+  .profil button{
+    margin: auto;
+    margin-left: 170px;
+  }
+  
+
+  
+  
+  
+  
+
+
+  @media  (min-width: 321px) and (max-width: 480px) {
+    h1{
+      font-size: 0.9rem;
+    }
+    p{
+      font-size: 0.7rem;
+    }
+    a{
+      font-size: 0.9rem;
+    }
+
+    .lien1{
+      margin-right: -200px;
+    }
+
+    img{
+      display: block;
+      width: 90px; 
+      height: 90px; 
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 50px;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    img:hover{
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    h5{
+      padding: 5px 5px 5px 5px;
+      font-size: 0.7rem; 
+    }
+    h5:hover{
+      background-color: #4caf50;
+      transition: 0.5s;
+    }
+    .text{
+      font-size: 0.7rem;
+    }
+    span{
+      font-size: 0.9rem;
+      font-weight: 100;
+    }
+    button{
+      font-size: 0.7rem;
+      margin-left: 30px;
+    }
+
+    .section{
+      margin-left: 10px;
+    }
+    .diplome h6 {
+      margin: 0;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    
+    .diplome em {
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    .diplome ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 0.9rem;
+    }
+
+    .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h4{
+      text-align: center;
+      border: 1px solid #333;
+      color: white;
+      background-color: #333;
+      padding: 5px 5px 5px 5px;
+      font-size: 0.7rem; 
+      width: 40%;
+      margin-left: 220px;
+    }
+    .parag{
+      text-align: justify;
+      font-size: 0.8rem;
+      width: 40%;
+      margin-left: 250px;
+    }
+  
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    h1{
+      font-size: 1rem;
+    }
+    p{
+      margin-right: 20px;
+      font-size: 1rem;
+    }
+    a{
+      font-size: 1rem;
+    }
+    .lien1{
+      margin-right: -435px;
+    }
+
+
+    img{
+      display: block;
+      width: 120px;
+      height: 120px; 
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 50px;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    img:hover{
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+    h5{
+      padding: 10px 10px 10px 10px;
+      font-size: 1rem; 
+    }
+    h5:hover{
+      background-color: #4caf50;
+      transition: 0.5s;
+    }
+    .text{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1rem;
+      font-weight: 200;
+    }
+    button{
+      font-size: 0.9rem;
+      margin-left: 90px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .section{
+      margin-left: 20px;
+    }
+
+    .diplome {
+      margin-top: -10px;
+    }
+    
+    .diplome h6 {
+      margin: 0;
+      text-align: center;
+      font-size: 1rem;
+    }
+    
+    .diplome em {
+      font-style: italic;
+      font-size: 0.95rem;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    .diplome ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h4{
+      text-align: center;
+      border: 1px solid #333;
+      color: white;
+      background-color: #333;
+      padding: 10px 10px 10px 10px;
+      font-size: 1rem; 
+      width: 40%;
+      margin-left: 350px;
+    }
+    .parag{
+      text-align: justify;
+      font-size: 0.9rem;
+      width: 40%;
+      margin-left: 350px;
+    }
+    
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1{
+      font-size: 1.2rem;
+    }
+    p{
+      margin-right: 40px;
+      font-size: 1rem;
+    }
+    a{
+      font-size: 1rem;
+    }
+    .lien1{
+      margin-right: -650px;
+    }
+    .text{
+      font-size: 1.5rem;
+    }
+
+    img{
+      display: block;
+      width: 130px;
+      height: 130px; 
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 50px;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    img:hover{
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    h5{
+      padding: 10px 10px 10px 10px;
+      font-size: 0.9rem; 
+    }
+    h5:hover{
+      background-color: #4caf50;
+      transition: 0.5s;
+    }
+    .text{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1rem;
+    }
+    button{
+      font-size: 0.9rem;
+      margin-left: 150px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .section{
+      margin-left: 20px;
+    }
+    .diplome {
+      margin-top: -10px;
+    }
+    
+    .diplome h6 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+    
+    .diplome em {
+      font-style: italic;
+      font-size: 1rem;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    .diplome ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h4{
+      text-align: center;
+      border: 1px solid #333;
+      color: white;
+      background-color: #333;
+      padding: 10px 10px 10px 10px;
+      font-size: 1rem; 
+      width: 40%;
+      margin-left: 500px;
+    }
+    .parag{
+      text-align: justify;
+      font-size: 0.9rem;
+      width: 40%;
+      margin-left: 500px;
+    }
+    
+  }
+
+   @media (min-width: 1025px) and (max-width: 1200px) {
+    h1{
+      font-size: 1.2rem;
+    }
+    p{
+      margin-right: 40px;
+      font-size: 1rem;
+    }
+    a{
+      font-size: 1rem;
+    }
+    .lien1{
+      margin-right: -800px;
+    }
+
+    img{
+      display: block;
+      width: 150px;
+      height: 150px; 
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 40px;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    img:hover{
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    h5{
+      padding: 10px 10px 10px 10px;
+      font-size: 0.9rem; 
+    }
+    h5:hover{
+      background-color: #4caf50;
+      transition: 0.5s;
+    }
+    .text{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1rem;
+    }
+    button{
+      font-size: 0.9rem;
+      margin-left: 180px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .section{
+      margin-left: 20px;
+    }
+
+    .diplome {
+      margin-top: -10px;
+    }
+    
+    .diplome h6 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    
+    .diplome em {
+      font-style: italic;
+      font-size: 1rem;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    .diplome ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+
+    .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h4{
+      text-align: center;
+      border: 1px solid #333;
+      color: white;
+      background-color: #333;
+      padding: 10px 10px 10px 10px;
+      font-size: 1rem; 
+      width: 40%;
+      margin-left: 550px;
+    }
+    .parag{
+      /* line-height: 1.5; */
+      text-align: justify;
+      /* letter-spacing: 1px; */
+      /* word-spacing: 3px; */
+      font-size: 1rem;
+      width: 40%;
+      margin-left: 600px;
+    }
+    
+  }
+
+  @media (min-width: 1201px) {
+ 
+     h1{
+      letter-spacing: 1px; 
+      word-spacing: 3px;
+      font-size: 1.8rem;
+    }
+    p{
+      margin-right: 100px;
+      font-size: 1.2rem;
+    }
+    a{
+      font-size: 1.2rem;
+    }
+    .lien1{
+      margin-right: -900px;
+    }
+
+    img{
+      display: block;
+      width: 150px;
+      height: 150px; 
+      border-radius: 50%;
+      margin: auto;
+      margin-top: 40px;
+      object-fit: cover;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    }
+    img:hover{
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+    }
+    h5{
+      padding: 15px 15px 15px 15px;
+      font-size: 1.2rem; 
+    }
+    h5:hover{
+      background-color: #4caf50;
+      transition: 0.5s;
+    }
+    .text{
+      font-size: 1.2rem;
+    }
+    span{
+      font-size: 1.3rem;
+    }
+    button{
+      font-size: 1.1rem;
+      margin-left: 220px;
+    }
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .section{
+      margin-left: 20px;
+    }
+
+    .diplome {
+      margin-top: -10px;
+    }
+    
+    .diplome h6 {
+      margin: 0;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    
+    .diplome em {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-left: 10px;
+      text-align: center;
+    }
+    
+    .diplome ul {
+      margin-top: 5px;
+      margin-bottom: 0;
+      font-size: 1.1rem;
+    }
+
+    .profil{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h4{
+      text-align: center;
+      border: 1px solid #333;
+      color: white;
+      background-color: #333;
+      padding: 10px 10px 10px 10px;
+      font-size: 1.3rem; 
+      width: 40%;
+      margin-left: 700px;
+    }
+    .parag{
+      /* line-height: 1.5; */
+      text-align: justify;
+      /* letter-spacing: 1px; */
+      /* word-spacing: 3px; */
+      font-size: 1.2rem;
+      width: 40%;
+      margin-left: 790px;
+    }
 }
-
-.competence{
-  border: solid black;
-  background-color: black;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
-  margin-top: 10px;
-}
-
-.skill {
-  background-color: #f2f2f2;
-  padding: 1px;
-
-}
-
-.progress-bar {
-  background-color: #e0e0e0;
-  height: 10px;
-  margin-top: 10px;
-}
-
-.progress {
-  background-color: #4caf50;
-  height: 100%;
-  width: 100%;
-}
-
-
-button{
-  margin-top: 5px;
-}
-
-
-
