@@ -1,759 +1,714 @@
-body {
-    margin: 0;
-    padding: 0;
+.contenu{
+  border: 1px solid black;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contenu-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.name {
+  margin-left: 50px;
+}
+
+h2{
+  color: gray;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  margin-right: 50px;
+}
+
+.social-icon i {
+  font-size: 30px;
+  color: gray;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+  margin: 0 50px;
+}
+.navbar {
+  background-color: hwb(226 5% 9%); 
+  display: flex;
+  align-items: center;
+  padding: 70px;
+  position: relative;
+}
+.image img{
+  margin-top: -70px;
+  width: 100px;
+  height: 200px;
+}
+
+img{
+  position: absolute;
+  height: 175px;
+  width: 100px;
+  border: 5px solid #ffffffc9;
+  margin-top: 100px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.nom {
+  margin-left: 250px;
+}
+
+.nom h1 {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+
+.nom em {
+  font-style: italic;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: -50px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 100px;
+  color: #0e0d0d;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#downloadButton {
+  background-color: #fff;
+}
+
+#greenButton {
+  background-color: #28a745;
+}
+
+.aboutme {
+  padding-top: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+p{
+  width: 40%;
+  font-size: 1.1rem;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.info {
+  flex: 1;
+  padding: 15px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+}
+
+.info-item {
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+  margin-left: 200px;
+}
+
+.value {
+  font-style: italic;
+  margin-right: 50px;
+}
+
+
+.competence {
+  margin-left: 15px;
+}
+
+.langages, .frameworks {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -5px;
+}
+.frameworks{
+  margin-left: 250px;
+}
+
+.competence-item {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background-color: #f2f2f2;
+  height: 20px;
+  width: 150%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 10px;
+}
+span{
+  text-align: justify;
+}
+
+
+
+.experience {
+  padding: 10px;
+}
+
+.etude{
+  padding: 10px;
+}
+.etude h1{
+  margin-left: 10px;
+}
+
+.etude .experience-item{
+  border-left: 5px solid green; 
+}
+
+.experience h1 {
+  margin-left: 10px;
+}
+
+.experience-item {
+  border: 1px solid #ccc;
+  border-left: 5px solid #0bb5f4;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+  position: relative; 
+}
+
+.experience-item:before {
+content: "";
+position: absolute;
+top: 13px;
+left: -30px;
+height: 6px;
+width: 6px;
+border-radius: 50%;
+border: 2px solid #0bb5f4;
+background-color: #0bb5f4;
+}
+
+.etude .experience-item:before{
+border: 2px solid green;
+background-color: green;
+}
+
+.experience-item:after {
+content: "";
+position: absolute;
+left: -25px;
+top: -5px;
+height: 148px;
+width: 1px;
+background-color: gray;
+}
+
+.etude .experience-item:after {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -5px;
+  height: 326px;
+  width: 1px;
+  background-color: gray;
   }
 
-  .container {
-      border: 2px solid #333;
-      height: 200vh;
-      position: relative;
-  }
+.experience-title {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  position: relative; 
+}
 
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: right;
-    margin-top: 50px;
-  }
+.experience-title:before {
+  content: "";
+  position: absolute;
+  left: -55px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 25px;
+  background-color: #0bb5f4;
+}
+ .etude .experience-title:before{
+  background-color: green;
+ }
 
-  h1{
-    font-size: 0.7rem;
-    
-  }
-  p{
-    font-size: 0.5rem;
-    margin-right: 30px;
-    color: gray;
-  }
-  .lien{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+.experience-date{
+  margin-left: 20px;
+}
+
+.experience-description {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-left: 20px;
+}
+
+.contact-form {
+  margin-bottom: 20px;
+  margin-right: 400px;
+}
+
+.name-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.name-field div {
+  flex-basis: 48%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.info-row {
+  margin-bottom: 10px;
+}
+
+.info-label {
+  font-weight: bold;
+}
+
+.info-value {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) { 
+  .name {
+    margin-left: 20px;
   }
   
-  a{
-    margin-left: auto;
-    text-decoration: none;
-    color: gray;
-    font-size: 0.7rem;
+  h2 {
+    font-size: 1rem;
   }
-  a:hover{
-    color: violet;
-    transition: 0.5s;
+  
+  .social-icon {
+    margin-right: 20px;
   }
-  .lien1{
-    margin-right: -100px;
+  
+  .social-icon i {
+    font-size: 20px;
   }
 
-  .section {
-    position: absolute;
-    top: 0;
-    right: 10px; /* Ajustez la valeur selon votre besoin */
-    bottom: 0;
-    margin-left: -10px;
-    width: 45%;
-    left: 20px;/* Ajustez la valeur selon votre besoin */
-    background-color: violet;
-    z-index: 1;
-  }
-  .image {
-    border: 1px solid black;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto; 
-    margin-top: 40px;
-    width: 80px;
-    height: 80px;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+  .navbar {
+    padding: 20px;
   }
   
   .image img {
-    /* display: block; */
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    object-position: center;
-  }
-  .image:hover{
-    -webkit-transform: scale(1.3);
-	  transform: scale(1.3);
-  }
-  h5{
-    text-align: center;
-    border: 1px solid #333;
-    color: white;
-    background-color: #333;
-    font-size: 0.65rem;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  h5:hover{
-    background-color: #4caf50;
-    transition: 0.5s;
-  }
-  .text{
-    text-align: center;
-    font-size: 0.6rem;
-    font-weight: bold;
-    margin: auto;
-  }
-
-  span{
-    font-size: 0.7rem;
-    text-align: center;
-  }
-
-  .skills {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    margin-top: -20px;
+    margin-top: -100px;
+    margin-left: -50px;
+    width: 90px;
+    height: 191px;
   }
   
-  .skill {
+  img {
+    height: 100px;
+    width: 100px;
+    margin-top: 40px;
+  }
+  
+  .nom {
+    margin-left: 60px;
+  }
+  
+  .nom h1 {
+    font-size: 1rem;
+  }
+  
+  .nom em {
+    font-size: 1rem;
+    margin-top: -25px;
+  }
+  
+  .buttons button {
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+
+  .aboutme {
+    flex-direction: column;
+  }
+  
+  p {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 250px;
+  }
+
+  .info-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .etude .experience-item:after {
+      height: 410px;
+  }
+  .etude li{
+      font-size: 0.8rem;
+  }
+
+  .experience .experience-item:after {
+      height: 255px;
+  }
+  .experience-item:before {
+      top: 22px;    
+  }
+  
+
+  .contact-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .contact-container .contact-info{
+    margin-right: 150px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea
+  {
+    width: 140%;
+  }
+  .contact-container .name-field {
+    gap: 100px;
+  }
+  .contact-container .name-field div {
+    width: 65px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .name {
+    margin-left: 20px;
+  }
+  
+  h2 {
+    font-size: 1rem;
+  }
+  
+  .social-icon {
+    margin-right: 20px;
+  }
+  
+  .social-icon i {
+    font-size: 20px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+  
+  .image img {
+    margin-top: -133px;
+    margin-left: -50px;
+    width: 90px;
+    height: 268px;
+    border: none;
+  }
+  
+  img {
+    height: 200px;
+    width: 200px;
+    margin-top: 40px;
+  }
+  
+  .nom {
+    margin-left: 60px;
+  }
+  
+  .nom h1 {
+    font-size: 10px;
+  }
+  
+  .nom em {
+    font-size: 0.5rem;
+    margin-top: -25px;
+  }
+  
+  .buttons button {
+    padding: 2px 4px;
+    font-size: 8px;
+  } 
+
+  .aboutme {
+    flex-direction: column;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin-left: 350px;
+  }
+
+  .info h1{
+    font-size: 1rem;
+  }
+
+  .info-item{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .competence h1{
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+  .competence .label{
+    font-size: 0.7rem;
+  }
+
+  .experience .experience-item:before {
+    top: 50px;
+  }
+  .experience-title {
+      font-size: 0.8rem;
+  }
+  .experience-date{
+      font-size: 0.8rem;
+  }
+
+  .experience ul li{
+      margin-left: -40px;
+      font-size: 0.8rem;
+  }
+    
+  .experience .experience-item:after {
+    height: 400px;
+  }
+
+  .etude .experience-item:after {
+      height: 372px;
+  }
+  .etude .experience-item:before {
+      top: 13px;
+  }
+  .etude ul li{
+      font-size: 0.5rem;
+      font-weight: bold;
+      margin-left: -50px;
+  }
+
+  
+
+  .contact-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-container .contact-info{
+    margin-left: 150px;
+  }
+  .contact-container .contact-form textarea{
+    height: 75px;
+    width: 150px;
+    margin-left: 90px;
+  }
+  
+  .contact-container .contact-form .name-field{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 150%;
+    gap: 10px 10px;
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .contenu-social{
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icons {
+    margin-left: 20px;
+  }
+
+  .navbar{
+    padding: 50px;
+  }
+  .nom h1{
+    font-size: 1.2rem;
+  }
+  .nom em{
+    font-size: 0.95rem;
+  }
+  img{
+    margin-top: 50px;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  p {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .details {
+    padding-top: 10px;
+    margin-right: 350px;
+  }
+  
+  .label {
+    margin-left: 0;
     margin-bottom: 5px;
   }
   
-  .progress {
-    height: 10px;
-    background-color: #f0f0f0;
+  .value {
+    margin-right: 0;
+  }
+
+  .competence{
+    display: flex;
+    flex-direction: column;
+  }
+  .competence .frameworks{
+    margin-left: 5px;
+  }
+  .competence .progress-bar {
+    width: 95%;
+  }
+
+  .experience-item:after {
+      height: 185px;
+  }
+
+  .contact-container .contact-form{
+    margin-right: 100px;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .langages, .frameworks {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -5px;
   }
   
   .progress-bar {
-    height: 100%;
-    background-color: #4caf50;
-  }
-  button{
-    border-radius: 10px;
-    height: 30px;
-    font-size: 0.6rem;
-    margin: 10px 10px;
-    margin-top: -100px;
-  }
-  button:hover{
-    background-color: #4caf50;
-    transition: 0.5s;
+    height: 10px;
+    width: 130%;
   }
 
-  .formations {
-    margin: 10px;
-  }
-  
-  .diplome {
-    margin-bottom: 10px;
-  }
-  
-  .diplome h6 {
-    margin: 0;
-    text-align: center;
-    font-size: 0.7rem;
-  }
-  
-  .diplome em {
-    font-style: italic;
-    font-size: 0.8rem;
+  .contact-container .contact-form{
     margin-left: 10px;
-    text-align: center;
   }
-  
-  .diplome ul {
-    margin-top: 5px;
-    margin-bottom: 0;
-    font-size: 0.8rem;
-  }
-  
-
-  .profil{
+  .contact-container .contact-info .info-row{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    /*margin-right: 100px;*/
   }
-  h4{
-    text-align: center;
-    border: 1px solid #333;
-    color: white;
-    background-color: #333;
-    font-size: 0.65rem;
-    width: 40%;
-    margin-left: 120px;
+  .name-field {
+    gap: 20px;
   }
-  h4:hover{
-    background-color: #4caf50;
-    transition: 0.5s;
+  .name-field div {
+    flex-basis: 75%;
   }
-  .parag{
-    text-align: justify;
-    font-size: 0.65rem;
-    width: 40%;
-    margin-left: 160px;
-  }
-
-  .experience h6{
-    margin-left: 150px;
-  }
-  .experience .liste{
-    text-align: justify;
-    font-size: 0.65rem;
-    width: 40%;
-    color: #615e5e;
-    margin-left: 125px;
-  }
-  .profil button{
-    margin: auto;
-    margin-left: 170px;
-  }
-  
-
-  
-  
-  
-  
-
-
-  @media  (min-width: 321px) and (max-width: 480px) {
-    h1{
-      font-size: 0.9rem;
-    }
-    p{
-      font-size: 0.7rem;
-    }
-    a{
-      font-size: 0.9rem;
-    }
-
-    .lien1{
-      margin-right: -200px;
-    }
-
-    img{
-      display: block;
-      width: 90px; 
-      height: 90px; 
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 50px;
-      object-fit: cover;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
-    img:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-    h5{
-      padding: 5px 5px 5px 5px;
-      font-size: 0.7rem; 
-    }
-    h5:hover{
-      background-color: #4caf50;
-      transition: 0.5s;
-    }
-    .text{
-      font-size: 0.7rem;
-    }
-    span{
-      font-size: 0.9rem;
-      font-weight: 100;
-    }
-    button{
-      font-size: 0.7rem;
-      margin-left: 30px;
-    }
-
-    .section{
-      margin-left: 10px;
-    }
-    .diplome h6 {
-      margin: 0;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-    
-    .diplome em {
-      font-style: italic;
-      font-size: 0.9rem;
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .diplome ul {
-      margin-top: 5px;
-      margin-bottom: 0;
-      font-size: 0.9rem;
-    }
-
-    .profil{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h4{
-      text-align: center;
-      border: 1px solid #333;
-      color: white;
-      background-color: #333;
-      padding: 5px 5px 5px 5px;
-      font-size: 0.7rem; 
-      width: 40%;
-      margin-left: 220px;
-    }
-    .parag{
-      text-align: justify;
-      font-size: 0.8rem;
-      width: 40%;
-      margin-left: 250px;
-    }
-  
-  }
-
-  @media (min-width: 481px) and (max-width: 768px) {
-    h1{
-      font-size: 1rem;
-    }
-    p{
-      margin-right: 20px;
-      font-size: 1rem;
-    }
-    a{
-      font-size: 1rem;
-    }
-    .lien1{
-      margin-right: -435px;
-    }
-
-
-    img{
-      display: block;
-      width: 120px;
-      height: 120px; 
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 50px;
-      object-fit: cover;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
-    img:hover{
-      -webkit-transform: scale(1.5);
-      transform: scale(1.5);
-    }
-    h5{
-      padding: 10px 10px 10px 10px;
-      font-size: 1rem; 
-    }
-    h5:hover{
-      background-color: #4caf50;
-      transition: 0.5s;
-    }
-    .text{
-      font-size: 1rem;
-    }
-    span{
-      font-size: 1rem;
-      font-weight: 200;
-    }
-    button{
-      font-size: 0.9rem;
-      margin-left: 90px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .section{
-      margin-left: 20px;
-    }
-
-    .diplome {
-      margin-top: -10px;
-    }
-    
-    .diplome h6 {
-      margin: 0;
-      text-align: center;
-      font-size: 1rem;
-    }
-    
-    .diplome em {
-      font-style: italic;
-      font-size: 0.95rem;
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .diplome ul {
-      margin-top: 5px;
-      margin-bottom: 0;
-      font-size: 0.95rem;
-    }
-
-    .profil{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h4{
-      text-align: center;
-      border: 1px solid #333;
-      color: white;
-      background-color: #333;
-      padding: 10px 10px 10px 10px;
-      font-size: 1rem; 
-      width: 40%;
-      margin-left: 350px;
-    }
-    .parag{
-      text-align: justify;
-      font-size: 0.9rem;
-      width: 40%;
-      margin-left: 350px;
-    }
-    
-  }
-
-  @media (min-width: 769px) and (max-width: 1024px) {
-    h1{
-      font-size: 1.2rem;
-    }
-    p{
-      margin-right: 40px;
-      font-size: 1rem;
-    }
-    a{
-      font-size: 1rem;
-    }
-    .lien1{
-      margin-right: -650px;
-    }
-    .text{
-      font-size: 1.5rem;
-    }
-
-    img{
-      display: block;
-      width: 130px;
-      height: 130px; 
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 50px;
-      object-fit: cover;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
-    img:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-    h5{
-      padding: 10px 10px 10px 10px;
-      font-size: 0.9rem; 
-    }
-    h5:hover{
-      background-color: #4caf50;
-      transition: 0.5s;
-    }
-    .text{
-      font-size: 1rem;
-    }
-    span{
-      font-size: 1rem;
-    }
-    button{
-      font-size: 0.9rem;
-      margin-left: 150px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .section{
-      margin-left: 20px;
-    }
-    .diplome {
-      margin-top: -10px;
-    }
-    
-    .diplome h6 {
-      margin: 0;
-      text-align: center;
-      font-size: 1.2rem;
-    }
-    
-    .diplome em {
-      font-style: italic;
-      font-size: 1rem;
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .diplome ul {
-      margin-top: 5px;
-      margin-bottom: 0;
-      font-size: 0.95rem;
-    }
-
-    .profil{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h4{
-      text-align: center;
-      border: 1px solid #333;
-      color: white;
-      background-color: #333;
-      padding: 10px 10px 10px 10px;
-      font-size: 1rem; 
-      width: 40%;
-      margin-left: 500px;
-    }
-    .parag{
-      text-align: justify;
-      font-size: 0.9rem;
-      width: 40%;
-      margin-left: 500px;
-    }
-    
-  }
-
-   @media (min-width: 1025px) and (max-width: 1200px) {
-    h1{
-      font-size: 1.2rem;
-    }
-    p{
-      margin-right: 40px;
-      font-size: 1rem;
-    }
-    a{
-      font-size: 1rem;
-    }
-    .lien1{
-      margin-right: -800px;
-    }
-
-    img{
-      display: block;
-      width: 150px;
-      height: 150px; 
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 40px;
-      object-fit: cover;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
-    img:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-    h5{
-      padding: 10px 10px 10px 10px;
-      font-size: 0.9rem; 
-    }
-    h5:hover{
-      background-color: #4caf50;
-      transition: 0.5s;
-    }
-    .text{
-      font-size: 1rem;
-    }
-    span{
-      font-size: 1rem;
-    }
-    button{
-      font-size: 0.9rem;
-      margin-left: 180px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .section{
-      margin-left: 20px;
-    }
-
-    .diplome {
-      margin-top: -10px;
-    }
-    
-    .diplome h6 {
-      margin: 0;
-      text-align: center;
-      font-size: 1.3rem;
-    }
-    
-    .diplome em {
-      font-style: italic;
-      font-size: 1rem;
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .diplome ul {
-      margin-top: 5px;
-      margin-bottom: 0;
-      font-size: 1rem;
-    }
-
-    .profil{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h4{
-      text-align: center;
-      border: 1px solid #333;
-      color: white;
-      background-color: #333;
-      padding: 10px 10px 10px 10px;
-      font-size: 1rem; 
-      width: 40%;
-      margin-left: 550px;
-    }
-    .parag{
-      /* line-height: 1.5; */
-      text-align: justify;
-      /* letter-spacing: 1px; */
-      /* word-spacing: 3px; */
-      font-size: 1rem;
-      width: 40%;
-      margin-left: 600px;
-    }
-    
-  }
-
-  @media (min-width: 1201px) {
- 
-     h1{
-      letter-spacing: 1px; 
-      word-spacing: 3px;
-      font-size: 1.8rem;
-    }
-    p{
-      margin-right: 100px;
-      font-size: 1.2rem;
-    }
-    a{
-      font-size: 1.2rem;
-    }
-    .lien1{
-      margin-right: -900px;
-    }
-
-    img{
-      display: block;
-      width: 150px;
-      height: 150px; 
-      border-radius: 50%;
-      margin: auto;
-      margin-top: 40px;
-      object-fit: cover;
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
-    }
-    img:hover{
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3);
-    }
-    h5{
-      padding: 15px 15px 15px 15px;
-      font-size: 1.2rem; 
-    }
-    h5:hover{
-      background-color: #4caf50;
-      transition: 0.5s;
-    }
-    .text{
-      font-size: 1.2rem;
-    }
-    span{
-      font-size: 1.3rem;
-    }
-    button{
-      font-size: 1.1rem;
-      margin-left: 220px;
-    }
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 10px;
-    }
-
-    .section{
-      margin-left: 20px;
-    }
-
-    .diplome {
-      margin-top: -10px;
-    }
-    
-    .diplome h6 {
-      margin: 0;
-      text-align: center;
-      font-size: 1.5rem;
-    }
-    
-    .diplome em {
-      font-style: italic;
-      font-size: 1.1rem;
-      margin-left: 10px;
-      text-align: center;
-    }
-    
-    .diplome ul {
-      margin-top: 5px;
-      margin-bottom: 0;
-      font-size: 1.1rem;
-    }
-
-    .profil{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h4{
-      text-align: center;
-      border: 1px solid #333;
-      color: white;
-      background-color: #333;
-      padding: 10px 10px 10px 10px;
-      font-size: 1.3rem; 
-      width: 40%;
-      margin-left: 700px;
-    }
-    .parag{
-      /* line-height: 1.5; */
-      text-align: justify;
-      /* letter-spacing: 1px; */
-      /* word-spacing: 3px; */
-      font-size: 1.2rem;
-      width: 40%;
-      margin-left: 790px;
-    }
 }

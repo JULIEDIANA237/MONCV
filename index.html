@@ -1,121 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    
-    <title>Mon Cv</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>MON CV</title>
 </head>
 <body>
+
+  <div class="contenu">
+
+    <div class="contenu-social">
+  <div class="name">
+    <h2>JULIE FONTSA DIANA</h2>
+  </div>
+  <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+    
+
     <div class="container">
-        <header>
-            <h1>JULIE FONTSA DIANA</h1>
-            <p>WEB DESIGNER</p>
-            <div class="lien">
-                <a class="lien1" href="http://">lien1</a>
-                <a href="http://">lien2</a>
+      <nav class="navbar">
+
+        <div class="image">
+          <img src="image/profile.jpeg" alt="">
+        </div>
+        
+        
+        <div class="nom">
+          <h1>JULIE FONTSA DIANA</h1>
+          <em>web designer</em>
+          <div class="buttons">
+            <button id="downloadButton">Télécharger le CV</button>
+            <button id="greenButton">Cliquez ici</button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="aboutme">
+        <div class="info">
+          <h1>À propos de moi</h1>
+          <p>Étudiante en génie logiciel passionnée par le web design, je suis à la recherche d'opportunités pour développer mes compétences dans ce domaine. <br>
+            Mon parcours académique m'a permis d'acquérir une solide base en programmation et développement de logiciels. <br>
+            Cependant, ma passion pour le design et l'esthétique m'a permis à explorer le monde du web design.</p>
+        </div>
+        <div class="details">
+          <div class="info-item">
+            <span class="label">Âge:</span>
+            <span class="value">26</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Email:</span>
+            <span class="value">jj0938108@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Téléphone:</span>
+            <span class="value">+237 693-32-63-99</span>
+          </div>
+          <div class="info-item">
+            <span class="label">Adresse:</span>
+            <span class="value">Yaoundé</span>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      
+      <div class="competence">
+        <h1>Compétences</h1>
+        <div class="langages">
+            
+            <div class="competence-item">
+                <span class="label">JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%; background-color: green;"></div>
+                </div>
             </div>
-        </header>
-
-
-          <div class="section">
-
-            <div class="image">
-              <img src="profile.jpeg" alt="">
+            <div class="competence-item">
+                <span class="label">HTML</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%; background-color: green;"></div>
+                </div>
             </div>
-              
-  
-              <h5>CONTACT</h5>
-              <p class="text">Tel: 693-32-63-99 <br> Adresse: Nkolbisson <br>E-mail: jj0938108@gmail.com</p>
-  
-              <h5>COMPETENCE</h5>
-              <div class="skills">
-                  <div class="skill">
-                    <!-- <h4>Compétence 1</h4> -->
-                    <span class="competence">Maîtrise des langages de programmation tels que HTML, CSS et JavaScript.</span>
-                    <div class="progress">
-                      <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <!-- <h4>Compétence 2</h4> -->
-                    <span class="competence">Connaissance des principes de conception et de l'expérience utilisateur.</span>
-                    <div class="progress">
-                      <div class="progress-bar" style="width: 60%;"></div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <!-- <h4>Compétence 3</h4> -->
-                    <span class="competence">Capacité à créer des interfaces utilisateur attrayantes et fonctionnelles.</span>
-                    <div class="progress">
-                      <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                  </div>
-                  <div class="skill">
-                    <!-- <h4>Compétence 3</h4> -->
-                    <span class="competence">Compréhension des concepts de responsive design et d'accessibilité web.</span>
-                    <div class="progress">
-                      <div class="progress-bar" style="width: 90%;"></div>
-                    </div>
-                  </div>
-              </div>
-              <button id="ajouter">Ajouter une compétence</button>
-              
-              <h5>FORMATIONS</h5>
-              <div class="diplome">
-                  <h6>Licence 1</h6>
-                  <em>Université de Yaoundé 1/Septembre 2021- Juin 2022</em>
-
-                  <div class="liste">
-                      <ul>
-                        <li>algèbre</li>
-                        <li>algorithmique</li>
-                        <li>Programmation Orientée Objet</li>
-                        <li>Programmation web</li>
-                        <li>Bases de Données</li>
-                        <li>Réseaux</li>
-                      </ul>
-                  </div>
-  
-                  <h6>Licence 2</h6>
-                  <em>Université de Yaoundé 1/Septembre 2022- Juin 2023</em>
-                  <div class="liste">
+            <div class="competence-item">
+                <span class="label">CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%; background-color: green;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="frameworks">
+            
+            <div class="competence-item">
+                <span class="label">Reactjs</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%; background-color: blue;"></div>
+                </div>
+            </div>
+            <div class="competence-item">
+                <span class="label">Nodejs</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%; background-color: blue;"></div>
+                </div>
+            </div>
+            <div class="competence-item">
+                <span class="label">Laravel</span>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%; background-color: blue;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      <hr>
+      
+      <div class="experience">
+        <h1>Expérience</h1>
+        <div class="experience-item">
+            <div class="experience-content">
+                <div class="experience-title">Conception et développement d'un site web pour un projet de cours</div>
+                <div class="experience-date">Mars 2022 - Mai 2023</div>
+                <div class="experience-description">
                     <ul>
-                      <li>algèbre</li>
-                      <li>algorithmique</li>
-                      <li>Programmation Orientée Objet</li>
-                      <li>Programmation web</li>
-                      <li>Bases de Données</li>
-                      <li>Réseaux</li>
+                        <li>Utilisation de HTML, CSS et JavaScript pour créer une interface utilisateur interactive et conviviale</li>
+                        <li>Collaboration avec d'autres étudiants pour la gestion de projet et la répartition des tâches</li>
                     </ul>
                 </div>
-              </div>
-              <button id="ajout">Ajouter une formation</button>
-          </div>
-  
-            <div class="profil">
-              <h4>PROFIL</h4>
-              <p class="parag">
-                Étudiante en génie logiciel passionnée par le web design, je suis à la recherche d'opportunités pour développer mes compétences dans ce domaine. <br> Mon parcours académique en génie logiciel m'a permis d'acquérir une solide base en programmation et en développement de logiciels. <br> Cependant, ma passion pour le design et l'esthétique m'a conduit à explorer le monde du web design.
-              </p>
-
-              <h4>EXPERIENCES</h4>
-              <div class="experience">
-                <h6>Projets scolaires en web design(2022)</h6>
-                <ul class="liste">
-                  <li>Conception et développement d'un site web interactif pour un projet de cours, en utilisant HTML, CSS et JavaScript</li>
-                  <li>Collaboration avec une équipe de camarades de classe pour définir les objectifs du projet et répartir les tâches</li>
-                  <li>Mise en œuvre d'un design moderne et esthétiquement plaisant, en utilisant des principes de design tels que la typographie, la couleur et la mise en page</li>
-                  <li>Défis rencontrés : adaptation du site aux différentes résolutions d'écran pour assurer une expérience utilisateur cohérente sur les appareils mobiles et de bureau. J'ai utilisé des techniques de responsive design pour relever ce défi.</li>
-                  <li>Résultat : un site web fonctionnel et attrayant, mettant en valeur les compétences techniques acquises et démontrant ma capacité à travailler en équipe pour atteindre les objectifs fixés.</li>
-                </ul>
-                
-              </div>
-              <button id="add">Ajouter une expérience</button>
-
-            </div>        
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-content">
+                <div class="experience-title">Projet de développement d'une application mobile pour un cours</div>
+                <div class="experience-date">Décembre 2022 - Avril 2023</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>Programmation en flutter pour développer une application Android</li>
+                        <li>Conception d'une interface utilisateur conviviale et intuitive</li>
+                        <li>Collaboration avec d'autres étudiants pour la gestion de projet et la répartition des tâches</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </div>
+      <hr>
+
+      <div class="etude">
+        <h1>Etudes</h1>
+        <div class="experience-item">
+            <div class="experience-content">
+                <div class="experience-title">LICENCE 1</div>
+                <div class="experience-date">Septembre 2021-Juillet 2022</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>ANGLAIS</li>
+                        <li>INTRODUCTION AUX SYSTÈMES D'INFORMATION D'ENTREPRISE</li>
+                        <li>PROGRAMMATION ORIENTÉE OBJET</li>
+                        <li>INTRODUCTION À LA PROGRAMMATION</li>
+                        <li>SYSTÈMES INFORMATIQUES</li>
+                        <li>INTRODUCTION AUX ALGORITHMES</li>
+                        <li>STRUCTURES DE DONNÉES ET PATTERNS 1</li>
+                        <li>MATHÉMATIQUES POUR L'INFORMATIQUE 1</li>
+                        <li>CRÉATION D'APPLICATIONS WEB</li>
+                        <li>MATHÉMATIQUES DISCRÈTES</li>
+                        <li>ANALYSE ET CONCEPTION DE DONNÉES</li>
+                        <li>ESSENTIELS DE L'INFORMATIQUE ET DE LA LOGIQUE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="experience-content">
+                <div class="experience-title">LICENCE 2</div>
+                <div class="experience-date">Septembre 2022-Juillet 2023</div>
+                <div class="experience-description">
+                    <ul>
+                        <li>ANGLAIS</li>
+                        <li>INTRODUCTION À L'INGÉNIERIE LOGICIELLE</li>
+                        <li>DÉVELOPPEMENT DE LOGICIELS POUR DISPOSITIFS MOBILES</li>
+                        <li>SYSTÈMES DE DONNÉES</li>
+                        <li>INTRODUCTION AUX SYSTÈMES D'EXPLOITATION</li>
+                        <li>INTRODUCTION À LA PROGRAMMATION EN .NET</li>
+                        <li>INTRODUCTION AUX RÉSEAUX INFORMATIQUES</li>
+                        <li>DÉVELOPPEMENT DE LOGICIELS EN JAVA 1</li>
+                        <li>ARCHITECTURE DES ORDINATEURS</li>
+                        <li>PROGRAMMATION DE BASES DE DONNÉES</li>
+                        <li>INGÉNIERIE LOGICIELLE</li>
+                        <li>DÉVELOPPEMENT AVANCÉ D'APPLICATIONS MOBILES</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+      <hr>
+
+      <h1 class="contact">contact</h1>
+      <div class="contact-container">
+          <div class="contact-form">
+            <div class="name-field">
+              <div>
+                <input type="text" id="name" name="name" placeholder="Nom">
+              </div>
+  
+              <div>
+                <input type="email" id="email" name="email" placeholder="Email">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <textarea id="message" name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="form-row">
+              <button type="submit">Envoyer</button>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-row">
+              <span class="info-label">Email :</span>
+              <span class="info-value">jj0938108@gmail.com</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Téléphone :</span>
+              <span class="info-value">+237 693-32-63-99</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Adresse :</span>
+              <span class="info-value">Yaoundé</span>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+   
     <script src="index.js"></script>
 </body>
 </html>
