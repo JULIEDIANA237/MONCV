@@ -1,17 +1,14 @@
-document.getElementById('downloadButton').addEventListener('click', function() {
-  var filename = 'mon-cv.pdf';
+function convertHTMLtoPDF() {
+  const { jsPDF } = window.jspdf;
 
-  html2pdf().set({
-    margin: 10,
-    filename: filename,
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  }).from(document.body).save();
-});
+  let doc = new jsPDF('p', 'mm', [1500, 1500]);
+  let pdfjs = document.querySelector('#divID');
 
-
-
-
-
-
+  doc.html(pdfjs, {
+      callback: function(doc) {
+          doc.save("newpdf.pdf");
+      },
+      x: 12,
+      y: 12
+  });                
+}            
