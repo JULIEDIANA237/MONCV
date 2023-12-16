@@ -108,7 +108,7 @@ img{
 }
 
 #greenButton {
-  background-color: #28a745;
+  background-color: #05f23d;
 }
 
 .aboutme {
@@ -168,6 +168,7 @@ p {
 
 .p6 {
   margin-bottom: 10px;
+  margin-left: 0px;
 }
 
 #progress{
@@ -213,7 +214,7 @@ p {
 #progress2:after{
   content: '';
   display: block;
-  background: #28a745;
+  background: #05f23d;
   width: 50%;
   height: 100%;
   border-radius: 5px;
@@ -229,7 +230,7 @@ p {
 #progress3:after{
   content: '';
   display: block;
-  background: #28a745;
+  background: #05f23d;
   width: 50%;
   height: 100%;
   border-radius: 5px;
@@ -253,7 +254,7 @@ p {
 }
 
 .etude .experience-item{
-  border-left: 5px solid green; 
+  border-left: 5px solid #05f23d; 
 }
 
 .experience h1 {
@@ -283,8 +284,8 @@ background-color: #0bb5f4;
 }
 
 .etude .experience-item:before{
-border: 2px solid green;
-background-color: green;
+border: 2px solid #05f23d;
+background-color: #05f23d;
 }
 
 .experience-item:after {
@@ -302,7 +303,7 @@ background-color: gray;
   position: absolute;
   left: -25px;
   top: -5px;
-  height: 550px;
+  height: 185px;
   width: 1px;
   background-color: gray;
   }
@@ -325,7 +326,7 @@ background-color: gray;
   background-color: #0bb5f4;
 }
  .etude .experience-title:before{
-  background-color: green;
+  background-color: #05f23d;
  }
 
 .experience-date{
@@ -374,7 +375,7 @@ background-color: gray;
 
 .inputBox input{
   border-radius: 5px;
-  background-color: #f0eaea;
+  background-color: hsl(0, 50%, 99%);
   padding: 10px;
   font-size: 1.1em;
   outline: none;
@@ -383,7 +384,7 @@ background-color: gray;
 
 .inputBox textarea{
   border-radius: 5px;
-  background-color: #f0eaea;
+  background-color: hsl(0, 50%, 99%);
   padding: 10px;
   font-size: 1.1em;
   outline: none;
